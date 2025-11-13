@@ -118,50 +118,50 @@ input[type="time"], input[type="date"], input[type="number"], input[type="text"]
         <input id="clienteNome" type="text" placeholder="Seu nome" required>
 
         <label>Serviço</label>
-        <section id="servicos" class="services-section">
   <h2>Serviços</h2>
-  <ul class="service-list">
-    <li>Mão e pé decorado – R$ 60,00</li>
-    <li>Mão e pé – R$ 50,00</li>
-    <li>Mão – R$ 25,00</li>
-    <li>Pé – R$ 25,00</li>
-    <li>Pés com unha encravada – R$ 40,00</li>
-    <li>Plástica dos pés – R$ 50,00</li>
-  </ul>
+ <label>Serviço</label>
+<select id="servicoSelect" name="servico" required>
+  <option value="">-- Escolha o serviço --</option>
 
-  <h3>Alongamentos e Aplicações</h3>
-  <ul class="service-list">
-    <li>Aplicação de fibra – R$ 150,00</li>
-    <li>Aplicação de gel na tip – R$ 110,00</li>
-    <li>Aplicação de gel moldado – R$ 120,00</li>
-    <li>Aplicação de molde F1 – R$ 120,00</li>
-    <li>Aplicação de banho de gel – R$ 90,00</li>
-    <li>Esmaltação em gel – R$ 50,00</li>
-    <li>Esmaltação em gel com arte – R$ 60,00</li>
-  </ul>
+  <optgroup label="Clássicos">
+    <option value="Mão e pé decorado" data-price="60" data-duration="90">Mão e pé decorado – R$ 60,00</option>
+    <option value="Mão e pé" data-price="50" data-duration="80">Mão e pé – R$ 50,00</option>
+    <option value="Mão" data-price="25" data-duration="45">Mão – R$ 25,00</option>
+    <option value="Pé" data-price="25" data-duration="45">Pé – R$ 25,00</option>
+    <option value="Pés com unha encravada" data-price="40" data-duration="60">Pés com unha encravada – R$ 40,00</option>
+    <option value="Plástica dos pés" data-price="50" data-duration="60">Plástica dos pés – R$ 50,00</option>
+  </optgroup>
 
-  <h3>Manutenções</h3>
-  <ul class="service-list">
-    <li>Manutenção com esmaltação em gel – R$ 80,00</li>
-    <li>Manutenção com arte – R$ 85,00</li>
-    <li>Manutenção com arte encapsulada – R$ 90,00</li>
-  </ul>
+  <optgroup label="Alongamentos e Aplicações">
+    <option value="Aplicação de fibra" data-price="150" data-duration="120">Aplicação de fibra – R$ 150,00</option>
+    <option value="Aplicação de gel na tip" data-price="110" data-duration="100">Aplicação de gel na tip – R$ 110,00</option>
+    <option value="Aplicação de gel moldado" data-price="120" data-duration="100">Aplicação de gel moldado – R$ 120,00</option>
+    <option value="Aplicação de molde F1" data-price="120" data-duration="100">Aplicação de molde F1 – R$ 120,00</option>
+    <option value="Banho de gel" data-price="90" data-duration="80">Aplicação de banho de gel – R$ 90,00</option>
+    <option value="Esmaltação em gel" data-price="50" data-duration="60">Esmaltação em gel – R$ 50,00</option>
+    <option value="Esmaltação em gel com arte" data-price="60" data-duration="70">Esmaltação em gel com arte – R$ 60,00</option>
+  </optgroup>
 
-  <h3>Extras</h3>
-  <ul class="service-list">
-    <li>Reversar o par – R$ 20,00</li>
-    <li>Remoção do gel – R$ 40,00</li>
-    <li>Remoção do esmalte em gel – R$ 30,00</li>
-    <li>Reposição de cada unha – R$ 10,00</li>
-  </ul>
+  <optgroup label="Manutenções">
+    <option value="Manutenção com esmaltação em gel" data-price="80" data-duration="90">Manutenção com esmaltação em gel – R$ 80,00</option>
+    <option value="Manutenção com arte" data-price="85" data-duration="100">Manutenção com arte – R$ 85,00</option>
+    <option value="Manutenção com arte encapsulada" data-price="90" data-duration="110">Manutenção com arte encapsulada – R$ 90,00</option>
+  </optgroup>
 
-  <h3>Combos</h3>
-  <ul class="service-list">
-    <li>Combo 1 – Manutenção com esmaltação em gel + manicure + pedicure – R$ 100,00</li>
-    <li>Combo 2 – Manutenção com esmaltação em gel + arte + manicure + pedicure – R$ 105,00</li>
-    <li>Combo 3 – Manutenção + arte encapsulada + manicure + pedicure – R$ 110,00</li>
-  </ul>
-</section>
+  <optgroup label="Extras">
+    <option value="Reversar o par" data-price="20" data-duration="20">Reversar o par – R$ 20,00</option>
+    <option value="Remoção do gel" data-price="40" data-duration="30">Remoção do gel – R$ 40,00</option>
+    <option value="Remoção do esmalte em gel" data-price="30" data-duration="20">Remoção do esmalte em gel – R$ 30,00</option>
+    <option value="Reposição de cada unha" data-price="10" data-duration="10">Reposição de cada unha – R$ 10,00</option>
+  </optgroup>
+
+  <optgroup label="Combos">
+    <option value="Combo 1" data-price="100" data-duration="120">Combo 1 – Manutenção com esmaltação em gel + manicure + pedicure – R$ 100,00</option>
+    <option value="Combo 2" data-price="105" data-duration="130">Combo 2 – Manutenção com esmaltação em gel + arte + manicure + pedicure – R$ 105,00</option>
+    <option value="Combo 3" data-price="110" data-duration="140">Combo 3 – Manutenção + arte encapsulada + manicure + pedicure – R$ 110,00</option>
+  </optgroup>
+</select>
+
 
 
         <!-- hidden duration used for blocking -->
