@@ -367,7 +367,7 @@ servSelect.addEventListener('change', ()=>{
 /* salva booking no Firebase */
 function saveBookingFirebase(dateStr, bookingObj){
   if(typeof database === 'undefined') return Promise.reject('Firebase não inicializado');
-  const ref = database.ref('private/bookings/' + dateStr);
+ const ref = database.ref('bookings/' + dateStr);
   const newRef = ref.push();
   return newRef.set(bookingObj).then(()=>{
     bookingsCache = bookingsCache || {};
